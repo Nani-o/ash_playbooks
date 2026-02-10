@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: "Sleep for 60 seconds"
+      ansible.builtin.command: sleep 60
+...
