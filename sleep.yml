@@ -4,9 +4,9 @@
     - debug:
         msg: "{{ item }}"
       loop:
-        - "name_survey"
-        - "choice"
-        - "multiple_choice"
+        - "{{ name_survey }}"
+        - "{{ choice }}"
+        - "{{ multiple_choice }}"
 
     - name: "Sleep for 60 seconds"
       ansible.builtin.command: sleep 60
