@@ -7,6 +7,7 @@
         - "{{ name_survey }}"
         - "{{ choice }}"
         - "{{ multiple_choice }}"
+        - "{{ example }}"
 
     - name: "Sleep for 60 seconds"
       ansible.builtin.command: sleep 60
