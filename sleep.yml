@@ -8,7 +8,9 @@
         - "{{ choice }}"
         - "{{ multiple_choice }}"
         - "{{ example }}"
+      tags: tag1
 
     - name: "Sleep for 60 seconds"
       ansible.builtin.command: sleep 60
+      tags: tag2
 ...
