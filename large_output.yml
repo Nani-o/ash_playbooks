@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - ansible.builtin.debug:
+        var: "ansible_facts"
+      loop: "{{ range(0, 15) | list }}"
+...
